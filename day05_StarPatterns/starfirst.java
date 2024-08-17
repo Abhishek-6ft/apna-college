@@ -20,8 +20,8 @@ public class starfirst {
         }
 
         // print half- Pyramid  pattern
-        int n = 4;
-        for (int line = 1; line <= n; line++) {
+        int nt = 4;
+        for (int line = 1; line <= nt; line++) {
             for (int number = 1; number <= line; number++) {
                 System.out.print(number);
             }
@@ -29,9 +29,9 @@ public class starfirst {
         }
 
         // Print character patters
-        int n = 5;
+        int nte = 5;
         char ch = 'A';
-        for (int line = 1; line <= n; line++) {
+        for (int line = 1; line <= nte; line++) {
             for (int chars = 1; chars <= line; chars++) {
                 System.out.print(ch);
                 ch++;
