@@ -11,7 +11,7 @@ package day12_Oops;
 
 
 public class Polymorphism {
-    public static void main(String args[])
+    public static void main(String args[]){
                             
         // Example of method overloading
         Calculator calc = new Calculator();
