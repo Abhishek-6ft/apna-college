@@ -12,13 +12,37 @@ package day12_Oops;
     2. Multi Level Inheritance
     Base Class --> Derived Class --> Derived Class
     Example : Animal(func eat,breathe prop. color) --> Mammals(prop. legs) --> Dog(breed)
+
+    3. Hierarchial Inheritance
+
+   4. Hybird Inheritance
+   
+
 */
 public class Inheritance {
     public static void main(String[] args) {
         
-        Fish shark = new Fish();
-        shark.eat();
+        // Fish shark = new Fish();
+        // shark.eat();
         // shark.breathe();
+
+        // Dog bunny = new Dog();
+        // bunny.color = "black";
+        // bunny.eat();
+        // bunny.legs =4;
+        // System.out.println(bunny.legs);
+        // System.out.println(bunny.color);
+
+
+        // Fish scobby = new Fish();
+        // scobby.breathe();
+        // scobby.Swin();
+        // scobby.breathe();
+        // scobby.eat();
+        // scobby.color = "gold";
+        // System.out.println(scobby.color);
+
+
     }
 }
 
@@ -36,11 +60,33 @@ class Animal {
     }
 }
 
-// Drive Class 
 class Fish extends Animal{
-    int fins;
-
-    void swim(){
-        System.out.println("Swim in water");
+    void Swin(){
+        System.out.println("Swim");
     }
 }
+
+class Bird extends Animal{
+    void fly(){
+        System.out.println("Fly");
+    }
+}
+
+class Mammal extends Animal{
+    void walks(){
+        System.out.println("Walks");
+    }
+}
+
+// class Dog extends Mammal{
+//     String breed;
+// }
+
+// Drive Class 
+// class Fish extends Animal{
+//     int fins;
+
+//     void swim(){
+//         System.out.println("Swim in water");
+//     }
+// }
