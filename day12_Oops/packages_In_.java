@@ -1,5 +1,5 @@
 package day12_Oops;
-import.java.util.*;
+import java.util.*;
 
 // Java has two types of packages
 // 1. Inbuilt packages
