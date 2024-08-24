@@ -52,7 +52,7 @@ class Animal {
     String color;
 
     void eat(){
-        System.out.println("eats");
+        System.out.println("Animal eats");
     }
 
     void breathe(){
