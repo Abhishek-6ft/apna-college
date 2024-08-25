@@ -30,6 +30,10 @@ public class practice {
         Bear b = new Bear();
         b.vegetarian();
         b.Non_vegetarian();
+
+        // 2 example of inheritance
+        Rectangle r1 = new Rectangle();
+        r1.getArea(5, 5);
     }    
 }
 
@@ -50,7 +54,20 @@ class Bear implements Herbivorus, Carnivorus{
         System.out.println("i also like meat baby");
     }
 }
+
+// Second Example of inheritance
+    interface Polygon{
+        void getArea(int length, int breath);
+    }
+
+    class Rectangle implements Polygon{
+        public void getArea(int length, int breath){
+            System.out.println("The area of Rectangle is " + (length * breath));
+        }
+    }
+
 // End of interface Example
+
 class StudentBioData{
     String name;
     int roll;
