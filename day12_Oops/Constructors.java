@@ -60,6 +60,7 @@ public class Constructors {
 // Copy Constructor
 
 class Student {
+    public static final char[] schoolName = null;
     String name;
     int rollno;
     String password;
