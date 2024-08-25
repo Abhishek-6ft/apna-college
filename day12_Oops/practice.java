@@ -3,9 +3,6 @@ package day12_Oops;
 public class practice {
     public static void main(String[] args) {
 
-        // interface Example
-
-
         // StudentBioData infoStudentfirst = new StudentBioData();
         // infoStudentfirst.name = "Abhishek kumar";
         // infoStudentfirst.roll = 21;
@@ -21,17 +18,15 @@ public class practice {
     
         // System.out.println(infoStudentfirst.name);
         // System.out.println(infoStudentfirst.DOB);
-    
-    
-    
+        
         // StudentBioData infoStudentSecond = new StudentBioData(infoStudentfirst);
         // infoStudentfirst.DOB = "7/2/2004";
         // infoStudentfirst.name = "sunny";
-    
         
         // System.out.println(infoStudentfirst.name);
         // System.out.println(infoStudentfirst.DOB);
-
+        
+        // interface Example
         Bear b = new Bear();
         b.vegetarian();
         b.Non_vegetarian();
@@ -55,7 +50,7 @@ class Bear implements Herbivorus, Carnivorus{
         System.out.println("i also like meat baby");
     }
 }
-
+// End of interface Example
 class StudentBioData{
     String name;
     int roll;
