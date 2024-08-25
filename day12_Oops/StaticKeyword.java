@@ -14,16 +14,23 @@ public class StaticKeyword {
         System.out.println(manoj.schoolName);
         
         StudentSbv abhishek = new StudentSbv();
-        abhishek.schoolName = "Sarvodya bal vidayala";
         System.out.println(abhishek.schoolName);
         
         StudentSbv sanjay = new StudentSbv();
+        // sanjay.schoolName = "Sarvodya bal vidayala";
         System.out.println(sanjay.schoolName);
+        System.out.println(sanjay.returnPercentage(100, 100, 99));
+
 
     }
 }
 
 class StudentSbv {
+
+    static int returnPercentage(int math, int phy, int chem){
+        return ((math + phy + chem) / 3) ;
+    }
+
     String name;
     int roll;
 
