@@ -9,11 +9,13 @@ package day12_Oops;
 public class Super_keyword {
     public static void main(String[] args) {
         HorseIndian broce = new HorseIndian();
+        System.out.println(broce.color);
         
     }
 }
 
 class IndianAnimal{
+    String color;
     IndianAnimal(){
         System.out.println("animal constructor is called");
     }
@@ -21,7 +23,8 @@ class IndianAnimal{
 
 class HorseIndian extends IndianAnimal {
     HorseIndian(){
-        super();
+        // super();
+        super.color = "brown";
         System.out.println("Horse constructor is called");   
     }
 }
