@@ -55,7 +55,7 @@ interface chessPlayer {
 class Queen implements chessPlayer {
     public void moves() {
         System.out.println("up, down, left, right, diagonal (in all 4 direction)");
-    }
+    } 
 }
 
 class Rook implements chessPlayer {
