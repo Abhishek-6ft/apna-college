@@ -24,7 +24,14 @@ public class recursion {
     }
 
     // Question 3 : Print factorial of a number n.
-
+    public static int fact(int n){
+        if(n == 0){
+            return 1;
+        }
+        int fN_1 = fact(n -1);
+        int fn = n * fact(n-1);
+        return;
+    }
     public static void main(String[] args) {
         int n = 5;
         // printDec(n);
