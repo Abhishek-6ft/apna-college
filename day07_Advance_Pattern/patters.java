@@ -154,13 +154,13 @@ public class patters {
 
     public static void main(String[] args) {
 
-        // hollow_rectange(10, 8);
+        hollow_rectange(10, 8);
         // Inverted_rotated_half_pyramid(5);
         // inverted_half_pyramid(5);
         // flouds_triangle(5);
         // zero_one_triangle(6);
         // solid_rhombus(10);
         // hoolow_rhombus(5);
-        diamod(60);
+        // diamod(60);
     }
 }

@@ -7,7 +7,7 @@ public class Array {
         @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         int phys;
-        phys = sc.nextInt();
+        // phys = sc.nextInt();
         marks[0] = sc.nextInt(); // phys
         marks[1] = sc.nextInt(); // chem
         marks[2] = sc.nextInt(); //math
