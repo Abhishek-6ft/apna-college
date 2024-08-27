@@ -3,7 +3,7 @@ package day08_Array;
 public class q {
     // CGPA calculator
 
-    public static void cgpa(int percentage, int calculatePercentage){
+    public static void cgpa(int percentage){
         // calculatePercentage;
         if (percentage >= 95) {
             System.out.println("Grade : A+");
