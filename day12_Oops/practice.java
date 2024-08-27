@@ -1,7 +1,43 @@
 package day12_Oops;
 
 public class practice {
+
+    public class ElectricCar extends Car {
+        @Override
+        public final String drive(){
+            return "Driving electric car";
+        }
+
+    }
+    // 
+    //new question
+    abstract class car{
+    static {
+        System.out.println("1");
+    }
+    public car(String name){
+        super();
+        System.out.print("2");
+    }
+    {
+        System.out.print("3");
+    }  
+}
+public class BlueCar extends car {
+    {
+        System.out.print("4");
+    }
+    public BlueCar(){
+        super("blue");
+        System.out.println("5");
+    }
+}
+    //
     public static void main(String[] args) {
+    //    System.out.println(new BlueCar());
+        // ElectricCar c = new ElectricCar();
+        // System.out.println();
+        
 
         // StudentBioData infoStudentfirst = new StudentBioData();
         // infoStudentfirst.name = "Abhishek kumar";
@@ -34,8 +70,24 @@ public class practice {
         // 2 example of inheritance
         Rectangle r1 = new Rectangle();
         r1.getArea(5, 5);
+
+        // Question 3
+
     }    
 }
+// Automobile example
+
+class Automobile {
+    private String drive() {
+        return "Driving vehicle";    
+    }
+}
+class Car extends Automobile{
+    protected String drive(){
+        return "Driving car";
+    }
+}
+
 
 interface Herbivorus{
     void vegetarian();
