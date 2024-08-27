@@ -30,12 +30,24 @@ public class recursion {
         }
         int fN_1 = fact(n -1);
         int fn = n * fact(n-1);
-        return;
+        return fn;
+    }
+    
+    // Question 4 : Print sum of first n Natural Numbers.
+    public static int sum(int n){
+        if (n == 1) {
+            return 1;
+        }
+        int SN_1 = sum(n - 1);
+        int Sn = n + SN_1;
+        return Sn;
     }
     public static void main(String[] args) {
         int n = 5;
         // printDec(n);
-        printInc(n);
+        // printInc(n);
+        // System.out.println(fact(n));
+        System.out.println(sum(n));
     }
 }
 
