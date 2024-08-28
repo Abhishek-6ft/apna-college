@@ -54,19 +54,27 @@ public class recursion {
     }
     
     // Question 6 : Check if a given array is sorted or not
+    public static boolean isSorted(int arr[], int i){
+        if (i == arr.length - 1) {
+            return true;
+        }
+
+        if (arr[i] > arr[i + 1]) {
+            return false;
+        }
+        return isSorted(arr, i+1);
+    }
+    // Question 7 : Write a function to find the first Occurence of an elment in an array
     
     public static void main(String[] args) {
         int n = 25;
+        int arr[] = {1, 5, 6, 8, 9, 5};
+        // System.out.println(isSorted(arr, 0));
         // printDec(n);
         // printInc(n);
         // System.out.println(fact(n));
         // System.out.println(sum(n));
-        System.out.println(fib(n));
-    //     System.out.println(fib(24));
-    //     System.out.println(fib(25));
-    //     System.out.println(fib(26));
-    //     System.out.println(fib(27));
-    //     System.out.println(fib(28));
+        // System.out.println(fib(n));
     }
 }
 
