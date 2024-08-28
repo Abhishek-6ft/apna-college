@@ -64,7 +64,7 @@ public class recursion {
         }
         return isSorted(arr, i+1);
     }
-    // Question 7 : Write a function to find the first Occurence of an elment in an array
+    // Question 7 : Write a function to find the first Occurence of an element in an array
     public static int firstOccrence(int arr[], int key, int i){
         if (i == arr.length) {
             return -1;
@@ -74,9 +74,23 @@ public class recursion {
         }
         return firstOccrence(arr, key, i+1);
     }
+    // Question 8 : Write a function to find the last Occurence of an element in an array
+    public static int lastOccrence(int arr[], int key, int i){
+        if (i == arr.length) {
+            return -1;
+        }
+
+        int isFound = lastOccrence(arr, key, i+1);
+        if (isFound == -1 && arr[i] == key) {
+            return i;
+        }
+
+        return isFound;
+    }
     public static void main(String[] args) {
         int n = 25;
-        int arr[] = {1, 50, 10, 0, 9, 5, 6, 8};
+        int arr[] = {1, 50, 10, 8, 9, 5, 6, 8};
+        System.out.println(lastOccrence(arr, 8, 0));
         System.out.println(firstOccrence(arr, 8, 0));
         // System.out.println(isSorted(arr, 0));
         // printDec(n);
