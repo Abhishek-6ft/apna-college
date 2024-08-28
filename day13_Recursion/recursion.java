@@ -42,12 +42,31 @@ public class recursion {
         int Sn = n + SN_1;
         return Sn;
     }
+    // Question 5 : Print Nth fibonacci number
+    public static int fib(int n){
+        if (n == 0 || n == 1) {
+            return n;
+        }
+        int fn_1 = fib(n-1);
+        int fn_2 = fib(n-2);
+        int fni = fn_1 + fn_2;
+        return fni;
+    }
+    
+    // Question 6 : Check if a given array is sorted or not
+    
     public static void main(String[] args) {
-        int n = 5;
+        int n = 25;
         // printDec(n);
         // printInc(n);
         // System.out.println(fact(n));
-        System.out.println(sum(n));
+        // System.out.println(sum(n));
+        System.out.println(fib(n));
+    //     System.out.println(fib(24));
+    //     System.out.println(fib(25));
+    //     System.out.println(fib(26));
+    //     System.out.println(fib(27));
+    //     System.out.println(fib(28));
     }
 }
 
