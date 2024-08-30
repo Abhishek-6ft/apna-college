@@ -12,7 +12,7 @@ public class palindromeQuestion {
         return true;
     }
     public static void main(String[] args) {
-        String str = "true";
+        String str = "eue";
         System.out.println(isPalindrome(str));
     }
 }

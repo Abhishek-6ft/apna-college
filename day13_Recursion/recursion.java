@@ -87,11 +87,25 @@ public class recursion {
 
         return isFound;
     }
+    // Question 9 : Print x*n (stack height = n)
+    public static int calcPower(int x, int n){
+        if (n == 0 ) {
+            return 1;
+        }
+        if (x == 0) {
+            return 0;
+        }
+        int xPowern_1 = calcPower(x, n-1);
+        int xPower = x * xPowern_1;
+        return xPower;
+    }
     public static void main(String[] args) {
-        int n = 25;
+        // int n = 25;
         int arr[] = {1, 50, 10, 8, 9, 5, 6, 8};
-        System.out.println(lastOccrence(arr, 8, 0));
-        System.out.println(firstOccrence(arr, 8, 0));
+        int x = 2 , n = 5;
+        System.out.println(calcPower(x, n));
+        // System.out.println(lastOccrence(arr, 8, 0));
+        // System.out.println(firstOccrence(arr, 8, 0));
         // System.out.println(isSorted(arr, 0));
         // printDec(n);
         // printInc(n);
