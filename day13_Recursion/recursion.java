@@ -99,11 +99,28 @@ public class recursion {
         int xPower = x * xPowern_1;
         return xPower;
     }
+    // Question : Power x*n stack height = logn
+    public static int calcPowerlogn(int x, int n){
+        if (n == 0) {
+            return 1;
+        }if(x==0){
+            return 0;
+        }
+        // if n = even number
+        if (n%2 == 0) {
+            return calcPowerlogn(x, n/2) * calcPowerlogn(x, n/2);
+        }
+        else{
+            return calcPowerlogn(x, n/2) * calcPowerlogn(x, n/2) * x;
+        }
+    }
     public static void main(String[] args) {
         // int n = 25;
         int arr[] = {1, 50, 10, 8, 9, 5, 6, 8};
         int x = 2 , n = 5;
         System.out.println(calcPower(x, n));
+        System.out.println(calcPowerlogn(x, n));
+
         // System.out.println(lastOccrence(arr, 8, 0));
         // System.out.println(firstOccrence(arr, 8, 0));
         // System.out.println(isSorted(arr, 0));
