@@ -6,8 +6,23 @@ package day13_Recursion;
  * (A tile can either be placed horizontally or vertically)
  */
 public class TilingProblem {
-    public static 
-    public static void main(String[] args) {
+    public static int tilingProblemCount(int n){ // 2 / n floor size
+        // base case
+        if (n == 0 || n == 1) {
+            return 1;
+        }
+        // work
+        //vertical choice
+        int verticalTiles_Fn_1 = tilingProblemCount(n-1);
+
+        //Horizontal choice
+        int horizontal_Fn_2 = tilingProblemCount(n - 2);
         
+        int totalWays = verticalTiles_Fn_1 + horizontal_Fn_2;
+        return totalWays;
+
+    }
+    public static void main(String[] args) {
+        System.out.println(tilingProblemCount(4));
     }
 }
