@@ -13,7 +13,7 @@ public class TowerOfHanoi {
         hanoiTower(n-1, helper, src, destination);
     }
     public static void main(String[] args) {
-        int n = 2;
+        int n = 5;
         hanoiTower(n, "Source", "Helper", "Destination");
     }
 }

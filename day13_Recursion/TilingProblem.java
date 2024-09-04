@@ -4,6 +4,7 @@ package day13_Recursion;
  * Given a "2 * n" board and tiles of the size "2 * 1" count the number of ways to 
  * tile the given board using the the 2 * 1 tiles.
  * (A tile can either be placed horizontally or vertically)
+ * Tiling problem
  */
 public class TilingProblem {
     public static int tilingProblemCount(int n){ // 2 / n floor size
