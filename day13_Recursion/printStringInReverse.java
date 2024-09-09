@@ -32,11 +32,24 @@ public class printStringInReverse {
 
         findOccurance(str, idx+1, element);
     }
-
+    // check if an array is sorted (Stricly increasing)
+    public static boolean isSorted(int arr[], int index){
+        // base case
+        if (index == arr.length-1) {
+            return true;
+        }
+        if (arr[index] >= arr[index + 1]) {
+            // arry is unsorted
+            return false;
+        }
+            return isSorted(arr, index+1);
+    }
 
     public static void main(String[] args) {
         String str = "baacdgtrflakkdd";
+        int arr[] = {1, 3, 5, 8, 7};
+        System.out.println(isSorted(arr, 0));
         // printReverse(str, str.length()-1);
-        findOccurance(str, 0, 'a');
+        // findOccurance(str, 0, 'a');
     }
 }
