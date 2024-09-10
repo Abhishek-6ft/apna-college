@@ -18,8 +18,26 @@ public class ProblemsOfRecursion {
             removeDuplicates(str, index+1, newString.append(currentChar), map);
         }
     }
+    // Question 2 Friends pairing problem
+    // Given n friends, each one can remain single or can be paired up with some other friend. Each friend can be paired only once. Find out the total number
+    // of ways in which friends can remain single or can be paired up
+    public static int friendsPairing(int n){
+        // base case
+        if(n == 1 || n == 2){
+            return n;
+        }
+        // choice
+        // single
+        int fnm_1 = friendsPairing(n-1);
+        // pairing
+        int fnm_2 = friendsPairing(n-2);
+        int pairways = (n-1) * fnm_2;
+
+        int totalWays = fnm_1 + pairways;
+    }
     public static void main(String[] args) {
         // String str = "appnacollege";
         // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        friendsPairing(3);
     }
 }
