@@ -19,7 +19,7 @@ public class ProblemsOfRecursion {
         }
     }
     public static void main(String[] args) {
-        String str = "appnacollege";
-        removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
+        // String str = "appnacollege";
+        // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
     }
 }
