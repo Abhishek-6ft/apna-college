@@ -13,14 +13,16 @@ public class TilingProblem {
             return 1;
         }
         // work
-        //vertical choice
-        int verticalTiles_Fn_1 = tilingProblemCount(n-1);
+        // //vertical choice
+        // int verticalTiles_Fn_1 = tilingProblemCount(n-1);
 
-        //Horizontal choice
-        int horizontal_Fn_2 = tilingProblemCount(n - 2);
+        // //Horizontal choice
+        // int horizontal_Fn_2 = tilingProblemCount(n - 2);
         
-        int totalWays = verticalTiles_Fn_1 + horizontal_Fn_2;
-        return totalWays;
+        // int totalWays = verticalTiles_Fn_1 + horizontal_Fn_2;
+        // return totalWays;
+
+        return tilingProblemCount(n-1) + tilingProblemCount(n - 2);
 
     }
     public static void main(String[] args) {

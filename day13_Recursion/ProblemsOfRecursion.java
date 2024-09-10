@@ -28,16 +28,19 @@ public class ProblemsOfRecursion {
         }
         // choice
         // single
-        int fnm_1 = friendsPairing(n-1);
-        // pairing
-        int fnm_2 = friendsPairing(n-2);
-        int pairways = (n-1) * fnm_2;
+        // int fnm_1 = friendsPairing(n-1);
+        // // pairing
+        // int fnm_2 = friendsPairing(n-2);
+        // int pairways = (n-1) * fnm_2;
 
-        int totalWays = fnm_1 + pairways;
+        // int totalWays = fnm_1 + pairways;
+        // return totalWays;
+        // single statement
+        return friendsPairing(n-1) + (n - 1) * friendsPairing(n-2);
     }
     public static void main(String[] args) {
         // String str = "appnacollege";
         // removeDuplicates(str, 0, new StringBuilder(""), new boolean[26]);
-        friendsPairing(3);
+        System.out.println(friendsPairing(3));
     }
 }
