@@ -48,8 +48,8 @@ public class printStringInReverse {
     public static void main(String[] args) {
         String str = "baacdgtrflakkdd";
         int arr[] = {1, 3, 5, 8, 7};
-        System.out.println(isSorted(arr, 0));
+        // System.out.println(isSorted(arr, 0));
         // printReverse(str, str.length()-1);
-        // findOccurance(str, 0, 'a');
+        findOccurance(str, 0, 'a');
     }
 }
