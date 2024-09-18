@@ -19,9 +19,8 @@ public class binarySearch {
         return -1;
     }
     public static void main(String[] args) {
-        int arrays[] = {8, 9, 5, 6, 1, 2, 7, 0, 3, 4};
-        Arrays.sort(arrays);
-        int keyy = 88;
+        int arrays[] = {1, 2, 3, 4, 5, 6, 7, 8};
+        int keyy = 5;
         System.out.print(Bsearch(arrays, keyy));
     }
 }
