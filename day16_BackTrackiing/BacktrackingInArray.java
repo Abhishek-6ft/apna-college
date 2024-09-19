@@ -20,7 +20,7 @@ public class BacktrackingInArray {
         }
         System.out.println();
     }
-    public static void main(String[] args) {
+    public  static void main(String[] args) {
         int array[] = new int[5];
         changeArr(array, 0, 1);
         printArray(array);
