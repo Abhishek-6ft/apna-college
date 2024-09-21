@@ -16,7 +16,7 @@ public class findPermutation {
         }
     }
     public static void main(String[] args) {
-        String Strr = "raj";
+        String Strr = "AAB";
         fndPermutation(Strr, "");
     }
 }

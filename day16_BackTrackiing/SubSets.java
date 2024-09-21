@@ -18,7 +18,7 @@ public class SubSets {
         FindSubSets(stri, answer, i+1);
     }
     public static void main(String[] args) {
-        String stri = "abc";
+        String stri = "AAB";
         FindSubSets(stri, "", 0);
     }
 }
