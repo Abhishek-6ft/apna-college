@@ -18,22 +18,22 @@ public class basic_Sorting {
     
     // Selection sorting
 
-    // public static void Selection_Sort(int arr[]) {
+    public static void Selection_Sort(int arr[]) {
 
-    // for (int i = 0; i < arr.length - 1; i++) {
-    // int MinPos = i;
-    // for (int j = i + 1; j < arr.length; j++) {
-    // if (arr[MinPos] < arr[j]) {
-    // MinPos = j;
-    // }
-    // }
+    for (int i = 0; i < arr.length - 1; i++) {
+    int MinPos = i;
+    for (int j = i + 1; j < arr.length; j++) {
+    if (arr[MinPos] < arr[j]) {
+    MinPos = j;
+    }
+    }
 
-    // // swap
-    // int temp = arr[MinPos];
-    // arr[MinPos] = arr[i];
-    // arr[i] = temp;
-    // }
-    // }
+    // swap
+    int temp = arr[MinPos];
+    arr[MinPos] = arr[i];
+    arr[i] = temp;
+    }
+    }
 
     
 
