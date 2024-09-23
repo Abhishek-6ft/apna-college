@@ -2,6 +2,11 @@ package day17_ArrayList;
 
 import java.util.ArrayList;
 public class QuestionInArrayLists {
+    public static void swap(ArrayList<Integer> list, int indx1, int indx2){
+        int temp = list.get(indx2);
+        list.set(indx1, list.get(indx2));
+        list.set(indx2, temp);
+    }
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(2);
@@ -10,15 +15,22 @@ public class QuestionInArrayLists {
         list.add(3);
         list.add(6);
         
-        // maximum in arraylist
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < list.size(); i++) {
+        // Question 2 Swap 2 Numbers index : inx 1 = 1, inx 2 = 3;
+        int indx1 = 1 , indx2 = 3;
+        System.out.println(list);
+        swap(list, indx1, indx2);
+        System.out.println(list);
+
+
+        //Question 1  maximum in arraylist
+        // int max = Integer.MIN_VALUE;
+        // for (int i = 0; i < list.size(); i++) {
             // if (max < list.get(i)) {
             //     max = list.get(i);
             // }
-            max = Math.max(max, list.get(i));
-        }
+            // max = Math.max(max, list.get(i));
+        // }
 
-        System.out.println("Max element = " + max);
+        // System.out.println("Max element = " + max);
     }
 }
