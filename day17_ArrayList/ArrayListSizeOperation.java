@@ -10,12 +10,19 @@ public class ArrayListSizeOperation {
         list.add(4);
         list.add(5);
 
-        System.out.println(list.size());
-
-        // print the arraylists
-        for (int i = 0; i < list.size(); i++) {
+        // Print Reverse array
+        for(int i=list.size()-1; i>=0; i--){
             System.out.print(list.get(i) + " ");
         }
         System.out.println();
+
+
+        // System.out.println(list.size());
+
+        // print the arraylists
+        // for (int i = 0; i < list.size(); i++) {
+        //     System.out.print(list.get(i) + " ");
+        // }
+        // System.out.println();
     }
 }
