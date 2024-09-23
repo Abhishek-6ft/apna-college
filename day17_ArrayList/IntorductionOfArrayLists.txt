@@ -1,0 +1,5 @@
+Introduction to Array Lists
+
+Array                                   |           Array Lists
+-Fixed size                             |           -Dynamic size
+-Primitive data types can be solved     |           -Premitive data types can't be stored directly
