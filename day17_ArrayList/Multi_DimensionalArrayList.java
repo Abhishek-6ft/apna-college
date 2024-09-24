@@ -12,6 +12,12 @@ public class Multi_DimensionalArrayList {
         list2.add(4); list2.add(5); list2.add(6);
         mainList.add(list2);
 
+        for(int i=0; i<mainList.size(); i++){
+            ArrayList<Integer> currentList = mainList.get(i);
+            for(int j=0; j<currentList.size(); j++){
+                System.out.print(currentList.get(j) + " ");
+            }
+        }
         System.out.println(mainList);
     }
 }
