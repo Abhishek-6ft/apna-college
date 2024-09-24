@@ -2,7 +2,7 @@ package day17_ArrayList;
 
 import java.util.*;
 
-public class ContainerWithMostWater {
+public class ContainerWithMostWater_B {
 
     public static int storeWater(ArrayList<Integer> height){
         int maxWater = 0;
