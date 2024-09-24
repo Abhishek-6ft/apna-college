@@ -19,6 +19,9 @@ public class Multi_DimensionalArrayList {
         mainList.add(list2);
         mainList.add(list3);
 
+        list2.remove(3);
+        list2.remove(2);
+
         System.out.println(mainList);
 
         // nested loop for print 
