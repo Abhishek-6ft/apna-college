@@ -1,7 +1,8 @@
 package day17_ArrayList;
 
-import java.util.ArrayList;
-import java.util.Collections;
+// import java.util.ArrayList;
+// import java.util.Collections;
+import java.util.*;
 
 public class QuestionInArrayLists {
     public static void swap(ArrayList<Integer> list, int indx1, int indx2){
@@ -17,11 +18,16 @@ public class QuestionInArrayLists {
         list.add(3);
         list.add(6);
 
-        // Question Sorting an ArrayList
+        // Question 3 Sorting an ArrayList
+        // System.out.println(list);
+        // Collections.sort(list); // ascending
+        // System.out.println(list);
+
+        //descending sort
         System.out.println(list);
-        Collections.sort(list);
-        System.out.println(list);
-        
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println(list);        
+
         // Question 2 Swap 2 Numbers index : inx 1 = 1, inx 2 = 3;
         // int indx1 = 1 , indx2 = 3;
         // System.out.println(list);
