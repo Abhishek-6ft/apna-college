@@ -14,7 +14,6 @@ public class Multi_DimensionalArrayList {
             list3.add(i*3); // 3 6 9 12 15
 
         }
-
         mainList.add(list1);
         mainList.add(list2);
         mainList.add(list3);
