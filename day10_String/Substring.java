@@ -13,7 +13,7 @@ public class Substring {
 
 
     public static void main(String[] args) {
-        String str = "HelloWorld";
+        String str = "ababa";
         System.out.println(str.substring(0, 5));
         System.out.println(subString(str, 0, 5));
     }
