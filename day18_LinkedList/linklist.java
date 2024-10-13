@@ -14,12 +14,14 @@ public class linklist {
 
     public static Node head;
     public static Node tail;
+    public static int size;
 
     // methods for linkedlist
     
     public void addFirst(int data){
         // Step1 = create new node
         Node newNode = new Node(data);
+        size++;
         if (head == null) {
             head = tail = newNode;
             return;
@@ -35,6 +37,7 @@ public class linklist {
     public void addLast(int data){
         // step 1 = create new node for last element
         Node newNode = new Node(data);
+        size++;
 
         if (head == null) {
             head = tail = newNode;
@@ -64,6 +67,7 @@ public class linklist {
             return;
         }
         Node newNode = new Node(data);
+        size++;
         Node temp = head;
         int i = 0;
 
@@ -74,13 +78,20 @@ public class linklist {
         newNode.next = temp.next;
         temp.next = newNode;
     }
+
+    public int removeFirst() {
+        int val = head.data;
+        head = head.next;
+        return val;
+    }
     public static void main(String[] args) {
         linklist ll = new linklist();
         ll.addFirst(2); 
-        ll.addLast(3); 
         ll.addFirst(1); 
-        ll.addLast(4);
-        ll.add(0, 9);
+        ll.addLast(4); 
+        ll.addLast(5);
+        ll.add(2, 3);
         ll.print(); 
+        System.out.println(ll.size);
     }
 }
