@@ -118,7 +118,7 @@ public class linklist {
 
     }
 
-
+    // search in linked list by iterative
     public int itrSearch(int key){
         Node temp = head;
         int i =0;
@@ -127,14 +127,34 @@ public class linklist {
             if (temp.data == key) { // key found
                 return i; 
             }
-
             temp = temp.next;
             i++;
         }
-
         return -1;
     }
 
+    // search in linked list by recursive
+    // Search for a key in linked list. Return the position where it is found if not found, return -1. Use Recursrion
+    public int helper(Node head, int key){
+        if (head == null) {
+            return -1;
+        }
+        
+        if (head.data == key) {
+            return 0;
+        }
+
+        int idx = helper(head.next, key);
+        if (idx == -1) {
+            return -1;
+        }
+
+        return idx+1;
+    }
+
+    public int recursiveSearch(int key){
+        return helper(head, key);
+    }
     public static void main(String[] args) {
         linklist ll = new linklist();
         ll.addFirst(2); 
@@ -150,8 +170,12 @@ public class linklist {
         // ll.removeLast();
         // ll.print();
 
-        System.out.println(ll.itrSearch(5));
-        System.out.println(ll.itrSearch(15));
+        // System.out.println(ll.itrSearch(5));
+        // System.out.println(ll.itrSearch(15));
+
+        System.out.println(ll.recursiveSearch(4));
+        System.out.println(ll.recursiveSearch(5));
+
 
     }
 }
