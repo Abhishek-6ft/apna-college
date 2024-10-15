@@ -175,7 +175,5 @@ public class linklist {
 
         System.out.println(ll.recursiveSearch(4));
         System.out.println(ll.recursiveSearch(5));
-
-
     }
 }
