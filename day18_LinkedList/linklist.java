@@ -117,6 +117,24 @@ public class linklist {
         return val;
 
     }
+
+
+    public int itrSearch(int key){
+        Node temp = head;
+        int i =0;
+        
+        while (temp != null) {
+            if (temp.data == key) { // key found
+                return i; 
+            }
+
+            temp = temp.next;
+            i++;
+        }
+
+        return -1;
+    }
+
     public static void main(String[] args) {
         linklist ll = new linklist();
         ll.addFirst(2); 
@@ -126,12 +144,14 @@ public class linklist {
         ll.add(2, 3);
         ll.print(); 
         // System.out.println(ll.size);
-        ll.removeFirst();
-        ll.print();
+        // ll.removeFirst();
+        // ll.print();
 
-        ll.removeLast();
-        ll.print();
+        // ll.removeLast();
+        // ll.print();
 
-        System.out.println(ll.size);
+        System.out.println(ll.itrSearch(5));
+        System.out.println(ll.itrSearch(15));
+
     }
 }
