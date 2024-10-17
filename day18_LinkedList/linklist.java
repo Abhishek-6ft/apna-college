@@ -155,6 +155,21 @@ public class linklist {
     public int recursiveSearch(int key){
         return helper(head, key);
     }
+
+    // Reverse a Linked list 
+    public void reverse() {
+        Node prev = null;
+        Node curr = tail = head;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         linklist ll = new linklist();
         ll.addFirst(2); 
@@ -173,7 +188,9 @@ public class linklist {
         // System.out.println(ll.itrSearch(5));
         // System.out.println(ll.itrSearch(15));
 
-        System.out.println(ll.recursiveSearch(4));
-        System.out.println(ll.recursiveSearch(5));
+        // System.out.println(ll.recursiveSearch(4));
+        // System.out.println(ll.recursiveSearch(22));
+        ll.reverse();
+        ll.print();
     }
 }
