@@ -170,6 +170,48 @@ public class linklist {
         }
         head = prev;
     }
+
+    // Remove nth From end on Linked List
+
+    public void deleteNthFromEnd(int n){
+        Node temp = head;
+        int sz = 0;
+        while(temp != null){
+            temp = temp.next;
+            sz++;
+        }
+
+        if (n == sz) {
+            head = head.next;
+            return;
+        }
+
+        int i = 1;
+        int itofind = sz-n;
+        Node prev = head;
+        while (i < itofind) {
+            prev = prev.next;
+            i++;
+        }
+        prev.next = prev.next.next;
+        return;
+    }
+
+    // Check if LL is palimdrome
+
+    // public Node findMid(Node head){
+    //     Node fast = head;
+    //     Node slow = head;
+
+    //     while (fast != null && fast.next != null) {
+    //         slow = slow.next; // slow +1
+    //         fast = fast.next.next; // fast +2
+    //     }
+
+    //     return slow; // slow in midvalue of linked list
+
+    // }
+
     public static void main(String[] args) {
         linklist ll = new linklist();
         ll.addFirst(2); 
@@ -190,7 +232,9 @@ public class linklist {
 
         // System.out.println(ll.recursiveSearch(4));
         // System.out.println(ll.recursiveSearch(22));
-        ll.reverse();
+        // ll.reverse();
+        // ll.print();
+        ll.deleteNthFromEnd(3);
         ll.print();
     }
 }
