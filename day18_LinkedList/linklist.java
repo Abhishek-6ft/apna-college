@@ -2,12 +2,12 @@ package day18_LinkedList;
 // import java.util.*;
 
 public class linklist {
-    public static class Node{
+    public static class Node {
         int data;
         Node next;
 
-        public Node(int data){
-            this.data  = data;
+        public Node(int data) {
+            this.data = data;
             this.next = null;
         }
     }
@@ -17,8 +17,8 @@ public class linklist {
     public static int size;
 
     // methods for linkedlist
-    
-    public void addFirst(int data){
+
+    public void addFirst(int data) {
         // Step1 = create new node
         Node newNode = new Node(data);
         size++;
@@ -30,11 +30,11 @@ public class linklist {
         // Step2 - newNode next = head
         newNode.next = head;
 
-        //Step3 - head = newNode
+        // Step3 - head = newNode
         head = newNode;
     }
 
-    public void addLast(int data){
+    public void addLast(int data) {
         // step 1 = create new node for last element
         Node newNode = new Node(data);
         size++;
@@ -49,19 +49,19 @@ public class linklist {
         tail = newNode;
     }
 
-    public void print(){
+    public void print() {
         if (head == null) {
             System.out.println("ll is empty");
         }
         Node temp = head;
         while (temp != null) {
-            System.out.print(temp.data+"->");
+            System.out.print(temp.data + "->");
             temp = temp.next;
         }
         System.out.println("null");
     }
 
-    public void add(int idx, int data){
+    public void add(int idx, int data) {
         if (idx == 0) {
             addFirst(data);
             return;
@@ -71,7 +71,7 @@ public class linklist {
         Node temp = head;
         int i = 0;
 
-        while (i < idx-1) {
+        while (i < idx - 1) {
             temp = temp.next;
             i++;
         }
@@ -95,7 +95,7 @@ public class linklist {
         return val;
     }
 
-    public int removeLast(){
+    public int removeLast() {
         if (size == 0) {
             System.out.println("LL is empty");
             return Integer.MIN_VALUE;
@@ -106,7 +106,7 @@ public class linklist {
         }
 
         Node prev = head;
-        for(int i=0; i<size-2; i++){
+        for (int i = 0; i < size - 2; i++) {
             prev = prev.next;
         }
 
@@ -119,13 +119,13 @@ public class linklist {
     }
 
     // search in linked list by iterative
-    public int itrSearch(int key){
+    public int itrSearch(int key) {
         Node temp = head;
-        int i =0;
-        
+        int i = 0;
+
         while (temp != null) {
             if (temp.data == key) { // key found
-                return i; 
+                return i;
             }
             temp = temp.next;
             i++;
@@ -134,12 +134,13 @@ public class linklist {
     }
 
     // search in linked list by recursive
-    // Search for a key in linked list. Return the position where it is found if not found, return -1. Use Recursrion
-    public int helper(Node head, int key){
+    // Search for a key in linked list. Return the position where it is found if not
+    // found, return -1. Use Recursrion
+    public int helper(Node head, int key) {
         if (head == null) {
             return -1;
         }
-        
+
         if (head.data == key) {
             return 0;
         }
@@ -149,14 +150,14 @@ public class linklist {
             return -1;
         }
 
-        return idx+1;
+        return idx + 1;
     }
 
-    public int recursiveSearch(int key){
+    public int recursiveSearch(int key) {
         return helper(head, key);
     }
 
-    // Reverse a Linked list 
+    // Reverse a Linked list
     public void reverse() {
         Node prev = null;
         Node curr = tail = head;
@@ -173,10 +174,10 @@ public class linklist {
 
     // Remove nth From end on Linked List
 
-    public void deleteNthFromEnd(int n){
+    public void deleteNthFromEnd(int n) {
         Node temp = head;
         int sz = 0;
-        while(temp != null){
+        while (temp != null) {
             temp = temp.next;
             sz++;
         }
@@ -187,7 +188,7 @@ public class linklist {
         }
 
         int i = 1;
-        int itofind = sz-n;
+        int itofind = sz - n;
         Node prev = head;
         while (i < itofind) {
             prev = prev.next;
@@ -198,28 +199,65 @@ public class linklist {
     }
 
     // Check if LL is palimdrome
+    public Node findMid(Node head) {
+        Node fast = head;
+        Node slow = head;
 
-    // public Node findMid(Node head){
-    //     Node fast = head;
-    //     Node slow = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next; // slow +1
+            fast = fast.next.next; // fast +2
+        }
+        return slow; // slow in midvalue of linked list
+    }
 
-    //     while (fast != null && fast.next != null) {
-    //         slow = slow.next; // slow +1
-    //         fast = fast.next.next; // fast +2
-    //     }
+    public boolean checkifPalidrome() {
+        if (head == null || head.next == null) {
+            return true;
+        }
 
-    //     return slow; // slow in midvalue of linked list
+        // step 1 find mid linked list 
+        Node midNode = findMid(head);
 
-    // }
+        // step 2 reverse 2nd half
+        Node prev = null;
+        Node curr = midNode;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+
+        Node right = prev; //right half hand
+        Node left = head;
+
+        // step 3 check left half and right half
+        while (right != null) {
+            if (left.data != right.data) {
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
+    }
 
     public static void main(String[] args) {
         linklist ll = new linklist();
-        ll.addFirst(2); 
-        ll.addFirst(1); 
-        ll.addLast(4); 
-        ll.addLast(5);
-        ll.add(2, 3);
-        ll.print(); 
+        // ll.addFirst(2);
+        // ll.addFirst(1);
+        // ll.addLast(4);
+        // ll.addLast(5);
+        // ll.add(2, 3);
+        ll.addLast(2);
+        ll.addLast(2);
+        ll.addLast(2);
+        // ll.addLast(1);
+        
+        ll.print();
+        System.out.println(ll.checkifPalidrome());
         // System.out.println(ll.size);
         // ll.removeFirst();
         // ll.print();
@@ -234,7 +272,7 @@ public class linklist {
         // System.out.println(ll.recursiveSearch(22));
         // ll.reverse();
         // ll.print();
-        ll.deleteNthFromEnd(3);
-        ll.print();
+        // ll.deleteNthFromEnd(3);
+        // ll.print();
     }
 }
