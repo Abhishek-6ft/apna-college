@@ -11,5 +11,10 @@ public class frameworkofLinkedList {
         lil.addFirst(0);
 
         System.out.println(lil);
+
+        //remove
+        lil.removeLast();
+        lil.removeFirst();
+        System.out.println(lil);
     }
 }
