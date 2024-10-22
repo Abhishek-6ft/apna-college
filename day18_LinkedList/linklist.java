@@ -244,20 +244,43 @@ public class linklist {
         return true;
     }
 
+
+    // detect is Cycle/loop exist in linked list
+    public static boolean isLoop(){
+        Node slow = head;
+        Node fast = head;
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true; // loop exist in linked list 
+            }
+        }
+        return false; 
+    }
     public static void main(String[] args) {
-        linklist ll = new linklist();
+
+        // make linked list for loop/cycle in linked list
+        head = new Node(1);
+        head.next = new Node(3);
+        head.next.next = new Node(3);
+        head.next.next.next = head;
+        System.out.println(isLoop());
+        
+        // linklist ll = new linklist();
         // ll.addFirst(2);
         // ll.addFirst(1);
         // ll.addLast(4);
         // ll.addLast(5);
         // ll.add(2, 3);
-        ll.addLast(2);
-        ll.addLast(2);
-        ll.addLast(2);
+        // ll.addLast(2);
+        // ll.addLast(2);
+        // ll.addLast(2);
         // ll.addLast(1);
         
-        ll.print();
-        System.out.println(ll.checkifPalidrome());
+        // ll.print();
+        // System.out.println(ll.checkifPalidrome());
         // System.out.println(ll.size);
         // ll.removeFirst();
         // ll.print();
