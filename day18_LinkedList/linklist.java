@@ -246,7 +246,7 @@ public class linklist {
 
 
     // detect is Cycle/loop exist in linked list
-    public static boolean isLoop(){
+    public static boolean isLoop(){ // this algorithm know as Floy's cycle finding algorithm 
         Node slow = head;
         Node fast = head;
 
@@ -259,13 +259,50 @@ public class linklist {
         }
         return false; 
     }
+
+    // Remove cycle/loop from linked list
+    public static void removeCycle(){
+
+        // Detct its cycle
+        Node slow = head;
+        Node fast = head;
+        boolean cycle = false;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (fast == slow) {
+                cycle = true;
+                break;
+            }
+        }
+        if (cycle == false) {
+            return;
+        }
+        
+        // find the meeting point
+        slow = head;
+        Node prev = null;
+        while (slow != fast) {
+            prev = fast;
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        // remove cycle
+        prev.next = null;
+    }
+
+
     public static void main(String[] args) {
 
         // make linked list for loop/cycle in linked list
         head = new Node(1);
-        head.next = new Node(3);
+        Node temp = new Node(2);
+        head.next = temp;
         head.next.next = new Node(3);
-        head.next.next.next = head;
+        head.next.next.next = temp;
+        System.out.println(isLoop());
+        removeCycle();
         System.out.println(isLoop());
         
         // linklist ll = new linklist();
