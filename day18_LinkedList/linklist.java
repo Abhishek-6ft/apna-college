@@ -408,20 +408,20 @@ public class linklist {
         // removeCycle();
         // System.out.println(isLoop());
         
-        linklist lil = new linklist();
-        lil.addLast(1);
-        lil.addLast(2);
-        lil.addLast(3);
-        lil.addLast(4);
-        lil.addLast(5);
-        lil.print();
-        lil.zig();
+        linklist ll = new linklist();
+        ll.addLast(5);
+        ll.addLast(2);
+        ll.addLast(1);
+        ll.addLast(3);
+        ll.addLast(4);
+        ll.print();
+        // ll.zig();
         // ll.print();
         // System.out.print(ll.zigZagNode());
         // ll.print();
 
-        // ll.head = ll.mergeSort(ll.head);
-        // ll.print();
+        ll.head = ll.mergeSort(ll.head);
+        ll.print();
 
 
         // ll.add(2, 3);
