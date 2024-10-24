@@ -42,11 +42,32 @@ public class doubleLinkedList {
         System.out.println("null");
     }
 
+    // remove -remove last
+    public int removeFirst(){
+        if (head == null) {
+            System.out.println("Dll is empty");
+            return Integer.MIN_VALUE;
+        }
+        if (size == 1) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val; 
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
     public static void main(String[] args) {
         doubleLinkedList dll = new doubleLinkedList();
         dll.addFirstdll(3);
         dll.addFirstdll(2);
         dll.addFirstdll(1);
+        dll.print();
+        System.out.println(dll.size);
+        dll.removeFirst();
         dll.print();
         System.out.println(dll.size);
 
