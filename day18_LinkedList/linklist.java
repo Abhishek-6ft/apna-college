@@ -292,24 +292,90 @@ public class linklist {
         prev.next = null;
     }
 
+    // merge sort in linked list
+    private Node getMid(Node head){
+        Node slow = head;
+        Node fast = head.next;
 
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        return slow; // this return mid value of nod
+    }
+
+    private Node merge(Node head1, Node head2){
+        Node mergeLL = new Node(-1);
+        Node temp = mergeLL;
+
+        while (head1 != null && head2 != null) {
+            if (head1.data <= head2.data) {
+                temp.next = head1;
+                head1 = head1.next;
+                temp = temp.next;
+            } else{
+                temp.next = head2;
+                head2 = head2.next;
+                temp = temp.next;
+            }
+        }
+
+        while (head1 != null) {
+            temp.next = head1;
+            head1 = head1.next;
+            temp = temp.next;
+        }
+        
+        while (head2 != null) {
+            temp.next = head2;
+            head2 = head2.next;
+            temp = temp.next;
+        }
+
+        return mergeLL.next;
+    }
+    // @SuppressWarnings("null")
+    public Node mergeSort(Node head){
+        //base case 
+        if (head == null || head.next == null) {
+            return head;
+        }
+
+        //find mid
+        Node mid = getMid(head);
+
+        // left and right merge sort
+        Node rightHead = mid.next;
+        mid.next = null;
+        Node newLeft = mergeSort(head);
+        Node newRight = mergeSort(rightHead);
+
+        //merge
+        return merge(newLeft, newRight);
+    }
     public static void main(String[] args) {
 
         // make linked list for loop/cycle in linked list
-        head = new Node(1);
-        Node temp = new Node(2);
-        head.next = temp;
-        head.next.next = new Node(3);
-        head.next.next.next = temp;
-        System.out.println(isLoop());
-        removeCycle();
-        System.out.println(isLoop());
+        // head = new Node(1);
+        // Node temp = new Node(2);
+        // head.next = temp;
+        // head.next.next = new Node(3);
+        // head.next.next.next = temp;
+        // System.out.println(isLoop());
+        // removeCycle();
+        // System.out.println(isLoop());
         
-        // linklist ll = new linklist();
-        // ll.addFirst(2);
-        // ll.addFirst(1);
-        // ll.addLast(4);
-        // ll.addLast(5);
+        linklist ll = new linklist();
+        ll.addFirst(1);
+        ll.addFirst(2);
+        ll.addFirst(3);
+        ll.addFirst(4);
+        ll.print();
+
+        ll.head = ll.mergeSort(ll.head);
+        ll.print();
+
+
         // ll.add(2, 3);
         // ll.addLast(2);
         // ll.addLast(2);

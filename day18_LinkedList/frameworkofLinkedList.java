@@ -18,3 +18,4 @@ public class frameworkofLinkedList {
         System.out.println(lil);
     }
 }
+
