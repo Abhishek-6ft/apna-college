@@ -353,6 +353,49 @@ public class linklist {
         //merge
         return merge(newLeft, newRight);
     }
+
+    // Zig Zag linked list updated
+    public void zig(){
+        // findmid
+        Node slow = head;
+        Node fast = head.next;
+        while(fast != null && fast.next != null){
+            slow = head.next;
+            fast = head.next.next;
+        }
+        // System.out.println("ok");
+        Node mid = slow;
+        // reverse 2nd half
+        Node curr = mid.next;
+        mid.next = null;
+        Node prev = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            prev = curr;
+            curr = next;
+        }
+        // System.out.println("ok2");
+        Node left = head;
+        Node right = prev;
+        Node nextLeft, nextRight;
+
+        // System.out.println("ok3");
+        // alt merge
+
+        while (left != null && right != null) {
+            nextLeft = left.next;
+            left.next = right;
+            nextRight = right.next;
+            right.next = nextLeft;
+
+            left = nextLeft;
+            right = nextRight;
+        }
+    }
+
     public static void main(String[] args) {
 
         // make linked list for loop/cycle in linked list
@@ -365,15 +408,20 @@ public class linklist {
         // removeCycle();
         // System.out.println(isLoop());
         
-        linklist ll = new linklist();
-        ll.addFirst(1);
-        ll.addFirst(2);
-        ll.addFirst(3);
-        ll.addFirst(4);
-        ll.print();
+        linklist lil = new linklist();
+        lil.addLast(1);
+        lil.addLast(2);
+        lil.addLast(3);
+        lil.addLast(4);
+        lil.addLast(5);
+        lil.print();
+        lil.zig();
+        // ll.print();
+        // System.out.print(ll.zigZagNode());
+        // ll.print();
 
-        ll.head = ll.mergeSort(ll.head);
-        ll.print();
+        // ll.head = ll.mergeSort(ll.head);
+        // ll.print();
 
 
         // ll.add(2, 3);
