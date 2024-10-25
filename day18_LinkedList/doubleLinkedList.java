@@ -60,16 +60,35 @@ public class doubleLinkedList {
         size--;
         return val;
     }
+
+    // Reverse a double linked list
+    public void reverse(){
+        Node curr = head;
+        Node prev = null;
+        Node next;
+
+        while (curr != null) {
+            next = curr.next;
+            curr.next = prev;
+            curr.prev = next;
+
+            prev = curr;
+            curr = next;
+        }
+        head = prev;
+    }
     public static void main(String[] args) {
         doubleLinkedList dll = new doubleLinkedList();
         dll.addFirstdll(3);
         dll.addFirstdll(2);
         dll.addFirstdll(1);
         dll.print();
-        System.out.println(dll.size);
-        dll.removeFirst();
+        dll.reverse();
         dll.print();
-        System.out.println(dll.size);
+        // System.out.println(dll.size);
+        // dll.removeFirst();
+        // dll.print();
+        // System.out.println(dll.size);
 
     }
 }
