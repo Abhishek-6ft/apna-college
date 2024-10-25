@@ -1,0 +1,658 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "introductionOfStack",
+            "request": "launch",
+            "mainClass": "day19_Stack.introductionOfStack",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "doubleLinkedList",
+            "request": "launch",
+            "mainClass": "day18_LinkedList.doubleLinkedList",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "datatype",
+            "request": "launch",
+            "mainClass": "day02.datatype",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "inputin",
+            "request": "launch",
+            "mainClass": "day02.inputin",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "sumbusingscanner",
+            "request": "launch",
+            "mainClass": "day02.sumbusingscanner",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "typePrmotioninExpression",
+            "request": "launch",
+            "mainClass": "day02.typePrmotioninExpression",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "typeofconverstion",
+            "request": "launch",
+            "mainClass": "day02.typeofconverstion",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "typesofoperaters",
+            "request": "launch",
+            "mainClass": "day03_Operaters.typesofoperaters",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "do_while_loop",
+            "request": "launch",
+            "mainClass": "day04_Loops.do_while_loop",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "forloops",
+            "request": "launch",
+            "mainClass": "day04_Loops.forloops",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "loopsbasic",
+            "request": "launch",
+            "mainClass": "day04_Loops.loopsbasic",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practiceset",
+            "request": "launch",
+            "mainClass": "day04_Loops.practiceset",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "whileLoop",
+            "request": "launch",
+            "mainClass": "day04_Loops.whileLoop",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "starfirst",
+            "request": "launch",
+            "mainClass": "day05_StarPatterns.starfirst",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "callByValue",
+            "request": "launch",
+            "mainClass": "day06_Functions.callByValue",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "convertBinaryToDecimal",
+            "request": "launch",
+            "mainClass": "day06_Functions.convertBinaryToDecimal",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "faunctionbasic",
+            "request": "launch",
+            "mainClass": "day06_Functions.faunctionbasic",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "functionOverloaded",
+            "request": "launch",
+            "mainClass": "day06_Functions.functionOverloaded",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice",
+            "request": "launch",
+            "mainClass": "day06_Functions.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "patters",
+            "request": "launch",
+            "mainClass": "day07_Advance_Pattern.patters",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Array",
+            "request": "launch",
+            "mainClass": "day08_Array.Array",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Binary_Search",
+            "request": "launch",
+            "mainClass": "day08_Array.Binary_Search",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Buy_Stock",
+            "request": "launch",
+            "mainClass": "day08_Array.Buy_Stock",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "LargesNumber",
+            "request": "launch",
+            "mainClass": "day08_Array.LargesNumber",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Linear_Search",
+            "request": "launch",
+            "mainClass": "day08_Array.Linear_Search",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "PairsInArray",
+            "request": "launch",
+            "mainClass": "day08_Array.PairsInArray",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Print_Subarrays",
+            "request": "launch",
+            "mainClass": "day08_Array.Print_Subarrays",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Question_Trapping_Rainwater",
+            "request": "launch",
+            "mainClass": "day08_Array.Question_Trapping_Rainwater",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "ReverseInArray",
+            "request": "launch",
+            "mainClass": "day08_Array.ReverseInArray",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "arrayAsFunction",
+            "request": "launch",
+            "mainClass": "day08_Array.arrayAsFunction",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "max_Subarray_sum",
+            "request": "launch",
+            "mainClass": "day08_Array.max_Subarray_sum",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice(1)",
+            "request": "launch",
+            "mainClass": "day08_Array.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "q",
+            "request": "launch",
+            "mainClass": "day08_Array.q",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "basic_Sorting",
+            "request": "launch",
+            "mainClass": "day09_Sorting.basic_Sorting",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "inbuilt_Sort",
+            "request": "launch",
+            "mainClass": "day09_Sorting.inbuilt_Sort",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice(2)",
+            "request": "launch",
+            "mainClass": "day09_Sorting.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "DiagonalSum",
+            "request": "launch",
+            "mainClass": "day10_2dArrays.DiagonalSum",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "SearchinSorted",
+            "request": "launch",
+            "mainClass": "day10_2dArrays.SearchinSorted",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "SprialMatrix",
+            "request": "launch",
+            "mainClass": "day10_2dArrays.SprialMatrix",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "_Arrays",
+            "request": "launch",
+            "mainClass": "day10_2dArrays._Arrays",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice(3)",
+            "request": "launch",
+            "mainClass": "day10_2dArrays.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Sortest_route",
+            "request": "launch",
+            "mainClass": "day10_String.Sortest_route",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Strg",
+            "request": "launch",
+            "mainClass": "day10_String.Strg",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "StringCompression",
+            "request": "launch",
+            "mainClass": "day10_String.StringCompression",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "String_Comparison",
+            "request": "launch",
+            "mainClass": "day10_String.String_Comparison",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Substring",
+            "request": "launch",
+            "mainClass": "day10_String.Substring",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "largestString",
+            "request": "launch",
+            "mainClass": "day10_String.largestString",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "palindromeQuestion",
+            "request": "launch",
+            "mainClass": "day10_String.palindromeQuestion",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "stringBuilder",
+            "request": "launch",
+            "mainClass": "day10_String.stringBuilder",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "BInaryAnd",
+            "request": "launch",
+            "mainClass": "day11_BitManulpation.BInaryAnd",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "FastExponentiation",
+            "request": "launch",
+            "mainClass": "day11_BitManulpation.FastExponentiation",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Question",
+            "request": "launch",
+            "mainClass": "day11_BitManulpation.Question",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Question2",
+            "request": "launch",
+            "mainClass": "day11_BitManulpation.Question2",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Abstraction",
+            "request": "launch",
+            "mainClass": "day12_Oops.Abstraction",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Constructors",
+            "request": "launch",
+            "mainClass": "day12_Oops.Constructors",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Getters_Setters",
+            "request": "launch",
+            "mainClass": "day12_Oops.Getters_Setters",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Inheritance",
+            "request": "launch",
+            "mainClass": "day12_Oops.Inheritance",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Practice_Question",
+            "request": "launch",
+            "mainClass": "day12_Oops.Practice_Question",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "StaticKeyword",
+            "request": "launch",
+            "mainClass": "day12_Oops.StaticKeyword",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Super_keyword",
+            "request": "launch",
+            "mainClass": "day12_Oops.Super_keyword",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "packages_In_",
+            "request": "launch",
+            "mainClass": "day12_Oops.packages_In_",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice(4)",
+            "request": "launch",
+            "mainClass": "day12_Oops.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "ProblemsOfRecursion",
+            "request": "launch",
+            "mainClass": "day13_Recursion.ProblemsOfRecursion",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "TilingProblem",
+            "request": "launch",
+            "mainClass": "day13_Recursion.TilingProblem",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "TowerOfHanoi",
+            "request": "launch",
+            "mainClass": "day13_Recursion.TowerOfHanoi",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "printStringInReverse",
+            "request": "launch",
+            "mainClass": "day13_Recursion.printStringInReverse",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "recursion",
+            "request": "launch",
+            "mainClass": "day13_Recursion.recursion",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Question(1)",
+            "request": "launch",
+            "mainClass": "day14_Divide_Conquer.Question",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "QuickSort",
+            "request": "launch",
+            "mainClass": "day14_Divide_Conquer.QuickSort",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "l",
+            "request": "launch",
+            "mainClass": "day14_Divide_Conquer.l",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "mergeSort",
+            "request": "launch",
+            "mainClass": "day14_Divide_Conquer.mergeSort",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "practice(5)",
+            "request": "launch",
+            "mainClass": "day14_Divide_Conquer.practice",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "binarySearch",
+            "request": "launch",
+            "mainClass": "day15_Time_Complexity.binarySearch",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "bubbleSort",
+            "request": "launch",
+            "mainClass": "day15_Time_Complexity.bubbleSort",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "loops",
+            "request": "launch",
+            "mainClass": "day15_Time_Complexity.loops",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "BacktrackingInArray",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.BacktrackingInArray",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "GridWay",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.GridWay",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "N_Queen",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.N_Queen",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "SubSets",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.SubSets",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Sudoko",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.Sudoko",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "findPermutation",
+            "request": "launch",
+            "mainClass": "day16_BackTrackiing.findPermutation",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListSizeOperation",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.ArrayListSizeOperation",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "ContainerWithMostWater_B",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.ContainerWithMostWater_B",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Intro",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.Intro",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Multi_DimensionalArrayList",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.Multi_DimensionalArrayList",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "PairSum",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.PairSum",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "PairSum2",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.PairSum2",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "PointerApproach",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.PointerApproach",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "QuestionInArrayLists",
+            "request": "launch",
+            "mainClass": "day17_ArrayList.QuestionInArrayLists",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "frameworkofLinkedList",
+            "request": "launch",
+            "mainClass": "day18_LinkedList.frameworkofLinkedList",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "linklist",
+            "request": "launch",
+            "mainClass": "day18_LinkedList.linklist",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "first.hello",
+            "projectName": "apna college_e3523451"
+        }
+    ]
+}
