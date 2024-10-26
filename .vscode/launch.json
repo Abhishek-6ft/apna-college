@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StackUsingFramework",
+            "request": "launch",
+            "mainClass": "day19_Stack.StackUsingFramework",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "StackUsingLinkedlist",
             "request": "launch",
             "mainClass": "day19_Stack.StackUsingLinkedlist",
