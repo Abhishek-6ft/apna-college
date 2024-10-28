@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StockSpan",
+            "request": "launch",
+            "mainClass": "day19_Stack.StockSpan",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Question",
             "request": "launch",
             "mainClass": "day19_Stack.Question",
