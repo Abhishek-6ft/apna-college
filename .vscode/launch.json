@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Duplicate_parentheses",
+            "request": "launch",
+            "mainClass": "day19_Stack.Duplicate_parentheses",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Valid_Parentheses",
             "request": "launch",
             "mainClass": "day19_Stack.Valid_Parentheses",
