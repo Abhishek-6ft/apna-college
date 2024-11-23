@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Area_of_Histogram",
+            "request": "launch",
+            "mainClass": "day19_Stack.Area_of_Histogram",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Duplicate_parentheses",
             "request": "launch",
             "mainClass": "day19_Stack.Duplicate_parentheses",
