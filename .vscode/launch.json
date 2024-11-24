@@ -6,6 +6,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Question2StackUsing2Stacks",
+            "request": "launch",
+            "mainClass": "day20_Queue.Question2StackUsing2Stacks",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "QuestionOneQueueUsing2Stacks",
+            "request": "launch",
+            "mainClass": "day20_Queue.QuestionOneQueueUsing2Stacks",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "QueueUsingJCFramework",
+            "request": "launch",
+            "mainClass": "day20_Queue.QueueUsingJCFramework",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "LinkedList",
+            "request": "launch",
+            "mainClass": "day20_Queue.LinkedList",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "CircularArray",
+            "request": "launch",
+            "mainClass": "day20_Queue.CircularArray",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Queue_Array",
+            "request": "launch",
+            "mainClass": "day20_Queue.Queue_Array",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Area_of_Histogram",
             "request": "launch",
             "mainClass": "day19_Stack.Area_of_Histogram",
