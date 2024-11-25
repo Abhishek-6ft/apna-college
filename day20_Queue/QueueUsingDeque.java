@@ -2,7 +2,7 @@ package day20_Queue;
 import java.util.*;
 import java.util.LinkedList;
 
-import day18_LinkedList.linklist;
+// import day18_LinkedList.linklist;
 
 public class QueueUsingDeque {
     static class Queue{
