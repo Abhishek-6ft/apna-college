@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "QueueUsingDeque",
+            "request": "launch",
+            "mainClass": "day20_Queue.QueueUsingDeque",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Deqeue",
+            "request": "launch",
+            "mainClass": "day20_Queue.Deqeue",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "QueueReversal",
+            "request": "launch",
+            "mainClass": "day20_Queue.QueueReversal",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "Interleave2HalvesOfQueue",
+            "request": "launch",
+            "mainClass": "day20_Queue.Interleave2HalvesOfQueue",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "FIrstNonRepeating",
+            "request": "launch",
+            "mainClass": "day20_Queue.FIrstNonRepeating",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Question2StackUsing2Stacks",
             "request": "launch",
             "mainClass": "day20_Queue.Question2StackUsing2Stacks",
