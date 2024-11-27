@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Fractionalknapsack",
+            "request": "launch",
+            "mainClass": "day21_Greedy.Fractionalknapsack",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "WIthoutSortingselection",
+            "request": "launch",
+            "mainClass": "day21_Greedy.WIthoutSortingselection",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "ActivitySelection",
+            "request": "launch",
+            "mainClass": "day21_Greedy.ActivitySelection",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "QueueUsingDeque",
             "request": "launch",
             "mainClass": "day20_Queue.QueueUsingDeque",

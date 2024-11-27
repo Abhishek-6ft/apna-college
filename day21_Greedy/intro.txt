@@ -1,0 +1,11 @@
+Introduction to Greedy
+Definition
+
+Greedy algorithm is the problem solving technique wehre we make the locally optimum choice
+at each stage & hope to achieve a global optimum.
+
+pros
+Simple & Easy Good enough TC(time complexity)
+
+cons 
+A lot of time, global optimum is not achieved
