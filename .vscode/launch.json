@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MinSumAbsoluteDiff",
+            "request": "launch",
+            "mainClass": "day21_Greedy.MinSumAbsoluteDiff",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Fractionalknapsack",
             "request": "launch",
             "mainClass": "day21_Greedy.Fractionalknapsack",
