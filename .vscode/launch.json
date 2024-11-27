@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IndiansCoins",
+            "request": "launch",
+            "mainClass": "day21_Greedy.IndiansCoins",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "MaxLengthChainOfPairs",
             "request": "launch",
             "mainClass": "day21_Greedy.MaxLengthChainOfPairs",
