@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BuildTreePreOrder",
+            "request": "launch",
+            "mainClass": "day22_BinaryTree.BuildTreePreOrder",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "BalancePartionOfString",
+            "request": "launch",
+            "mainClass": "day21_Greedy.BalancePartionOfString",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "problems",
+            "request": "launch",
+            "mainClass": "day21_Greedy.problems",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "ChocolaProblem",
             "request": "launch",
             "mainClass": "day21_Greedy.ChocolaProblem",
