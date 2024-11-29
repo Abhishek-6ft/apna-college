@@ -37,6 +37,15 @@ public class BuildTreePreOrder {
             preOrder(root.left);
             preOrder(root.right);
         }
+
+        public static void inOrder(Node root){
+            if (root == null) {
+                return;
+            }
+            inOrder(root.left);
+            System.out.print(root.data + " ");
+            inOrder(root.right);
+        }
     }
 
 
@@ -44,6 +53,8 @@ public class BuildTreePreOrder {
         int nodes[] = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
         BinaryTree tree = new BinaryTree();
         Node root = tree.buildTree(nodes); 
-        tree.preOrder(root);       
+        tree.preOrder(root);  
+        System.out.println(); 
+        tree.inOrder(root);    
     }    
 }
