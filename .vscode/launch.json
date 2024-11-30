@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HeightOfTree",
+            "request": "launch",
+            "mainClass": "day22_BinaryTree.HeightOfTree",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "BuildTreePreOrder",
             "request": "launch",
             "mainClass": "day22_BinaryTree.BuildTreePreOrder",
