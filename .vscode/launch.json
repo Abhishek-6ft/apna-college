@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TopViewofaTree",
+            "request": "launch",
+            "mainClass": "day22_BinaryTree.TopViewofaTree",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Subtree",
             "request": "launch",
             "mainClass": "day22_BinaryTree.Subtree",
