@@ -55,6 +55,28 @@ public class LowestCommonAncestor {
         return lca;
 
     }
+
+    public static Node lca2(Node root, int n1, int n2){
+        //base cases
+        if (root == null || root.data == n1 || root.data == n2) {
+            return root;
+        }
+        // find in left subtree 
+       Node leftLca = lca2(root.left, n1, n2);
+
+       //fint the right subtree
+       Node rightLca = lca2(root.right, n1, n2);
+
+       // Left Lca = val || right Lca = null
+        if(rightLca == null){
+            return leftLca;
+        }
+       // Left Lca = null || right Lca = val
+        if (leftLca == null) {
+            return rightLca;
+        }
+        return root;
+    }
     public static void main(String[] args) {
         
 
@@ -66,7 +88,7 @@ public class LowestCommonAncestor {
         root.right.left = new Node(6);
         root.right.right = new Node(7);
         
-        int n1 = 7, n2 = 3-;
-        System.out.println(lca(root, n1, n2).data);
+        int n1 = 2, n2 = 5;
+        System.out.println(lca2(root, n1, n2).data);
     }
 }
