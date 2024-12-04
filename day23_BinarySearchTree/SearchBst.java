@@ -1,7 +1,5 @@
 package day23_BinarySearchTree;
 
-import day04_Loops.forloops;
-
 public class SearchBst {
     static class Node{
         int data;
