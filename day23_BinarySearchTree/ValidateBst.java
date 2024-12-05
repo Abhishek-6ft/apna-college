@@ -49,8 +49,10 @@ public class ValidateBst {
 
         return isValidBST(root.left, min, root) && isValidBST(root.right, root, max);
     }
+
+    //
     public static void main(String[] args) {
-        int value[] = {1, 15, 13, 6, 10, 11, 14};
+        int value[] = {8, 5, 3, 6, 10, 11};
         Node root = null;
 
         for(int i = 0; i<value.length;i++){

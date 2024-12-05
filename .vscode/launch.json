@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MirrorBst",
+            "request": "launch",
+            "mainClass": "day23_BinarySearchTree.MirrorBst",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "ValidateBst",
             "request": "launch",
             "mainClass": "day23_BinarySearchTree.ValidateBst",
