@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "OOPS",
+            "request": "launch",
+            "mainClass": "day12_Oops.OOPS",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "SearchBst",
             "request": "launch",
             "mainClass": "day23_BinarySearchTree.SearchBst",

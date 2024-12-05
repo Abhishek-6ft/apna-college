@@ -1,5 +1,5 @@
 package day23_BinarySearchTree;
-
+import java.util.*;
 public class SearchBst {
     static class Node {
         int data;
@@ -106,6 +106,25 @@ public class SearchBst {
         }
     }
 
+    // This function find the Root to leaf path withusing of ArrayList
+    public static void printPath(ArrayList<Integer> path){
+        for (int i = 0; i < path.size(); i++) {
+            System.out.print(path.get(i) + "->");
+        }
+        System.out.println("Null");
+    }
+    public static void printRoot2Leaf(Node root, ArrayList<Integer> path){
+        if (root == null) {
+            return;
+        }
+        path.add(root.data);
+        if (root.left == null && root.right == null) {
+            printPath(path);
+        }
+        printRoot2Leaf(root.left, path);
+        printRoot2Leaf(root.right, path);
+        path.remove(path.size()-1);
+    } 
     public static void main(String[] args) {
         int values[] = { 8, 5, 3, 1, 4, 6, 10, 11, 14 };
         Node root = null;
@@ -115,7 +134,8 @@ public class SearchBst {
         }
         inOrder(root);
         System.out.println();
-        printInRange(root, 5, 12);
+        printRoot2Leaf(root, new ArrayList<>());
+        // printInRange(root, 5, 12);
         // inOrder(root);
         // System.out.println();
 
