@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BSTtoBalanceBST",
+            "request": "launch",
+            "mainClass": "day23_BinarySearchTree.BSTtoBalanceBST",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "SortedArrayTobalanceBST",
             "request": "launch",
             "mainClass": "day23_BinarySearchTree.SortedArrayTobalanceBST",
