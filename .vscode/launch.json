@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Avl",
+            "request": "launch",
+            "mainClass": "day24_AVlLTree.Avl",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "Merge2BST",
             "request": "launch",
             "mainClass": "day23_BinarySearchTree.Merge2BST",
