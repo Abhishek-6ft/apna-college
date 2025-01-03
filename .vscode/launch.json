@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ConnectNropes",
+            "request": "launch",
+            "mainClass": "day25_PriorityQueue_Heaps.ConnectNropes",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "NearByCars",
             "request": "launch",
             "mainClass": "day25_PriorityQueue_Heaps.NearByCars",
