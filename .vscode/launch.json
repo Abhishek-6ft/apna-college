@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IterationOnHashMap",
+            "request": "launch",
+            "mainClass": "day26_Hasing.IterationOnHashMap",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "StudentManagementSystem",
             "request": "launch",
             "mainClass": "day02.StudentManagementSystem",
