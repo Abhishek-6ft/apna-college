@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "StudentManagementSystem",
+            "request": "launch",
+            "mainClass": "day02.StudentManagementSystem",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
+            "name": "HashMapOperation",
+            "request": "launch",
+            "mainClass": "day26_Hasing.HashMapOperation",
+            "projectName": "apna college_e3523451"
+        },
+        {
+            "type": "java",
             "name": "WeakestSolider",
             "request": "launch",
             "mainClass": "day25_PriorityQueue_Heaps.WeakestSolider",
